@@ -1,11 +1,8 @@
-﻿using System;
-namespace extractor_xml.Model
+﻿namespace extractor_xml.Model
 {
     public class Endereco
     {
-        public Endereco()
-        {
-        }
+        public Endereco() { }
 
         public string Logradouro { get; set; }
         public string Cidade { get; set; }

@@ -1,12 +1,12 @@
-﻿using System;
-using extractor_xml.Model;
+﻿using extractor_xml.Model;
+using extractor_xml.Repositorio.Interfaces;
 
 namespace extractor_xml.Repositorio
 {
     /// <summary>
     /// Como nao estamos trabalhando com banco de dados, esta sendo inicializada uma lista com alguns usuarios
     /// </summary>
-    public class MockUsuarioRepositorio
+    public class MockUsuarioRepositorio : IMockUsuarioRepositorio
     {
         public List<Usuario> Usuarios = new List<Usuario>();
 
