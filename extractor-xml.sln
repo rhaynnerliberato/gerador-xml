@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1700.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extractor-xml", "extractor-xml.csproj", "{04D0AE35-C7B9-4DA8-9662-75BCF49B3CCF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extractor.tests", "..\extractor.tests\extractor.tests.csproj", "{C19F1ECE-6D43-4003-B647-E07427862A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{04D0AE35-C7B9-4DA8-9662-75BCF49B3CCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04D0AE35-C7B9-4DA8-9662-75BCF49B3CCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04D0AE35-C7B9-4DA8-9662-75BCF49B3CCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C19F1ECE-6D43-4003-B647-E07427862A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C19F1ECE-6D43-4003-B647-E07427862A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C19F1ECE-6D43-4003-B647-E07427862A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C19F1ECE-6D43-4003-B647-E07427862A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

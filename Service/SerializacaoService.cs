@@ -10,7 +10,7 @@ namespace extractor_xml.Service
     {
 
         // cria um objeto Usuario e serializa para um arquivo xml dentro da pasta arquivosGerados
-        public void SerializarObjeto(string nomeArquivo)
+        public bool SerializarObjeto(string nomeArquivo)
         {
             Usuario usuario = new Usuario()
             {
@@ -31,7 +31,17 @@ namespace extractor_xml.Service
             using (StreamWriter stream = new StreamWriter(Path.Combine(@"/Users/rhaynnerliberato/Projects/proj-extractor-xml/extractor-xml/arquivosGerados", nomeArquivo)))
             {
                 XmlSerializer serializador = new XmlSerializer(typeof(Usuario));
-                serializador.Serialize(stream, usuario);
+                try
+                {
+                    serializador.Serialize(stream, usuario);
+                    return true;
+                }
+                catch
+                {
+                    return false;
+                }
+                
+
             }
         }
 
