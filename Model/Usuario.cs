@@ -1,15 +1,21 @@
 ﻿using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace extractor_xml.Model
 {
     [Serializable]
+    [XmlRoot("MemberDetails")]
     public class Usuario : ISerializable
     {
         public Usuario() { }
 
+        [XmlElement("MemberName")]
         public string Nome { get; set; }
+        [XmlElement("MemberLastName")]
         public string Sobrenome { get; set; }
+        [XmlElement("MemberEmail")]
         public string Email { get; set; }
+        [XmlElement("MemberAddress")]
         public Endereco Endereco { get; set; }
 
 
